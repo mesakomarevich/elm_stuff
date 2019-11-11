@@ -14,28 +14,20 @@ import Html.Events exposing (onClick)
 
 
 -- MAIN
-
-
 main =
   Browser.sandbox { init = init, update = update, view = view }
 
 
 
 -- MODEL
-
-
 type alias Model = Int
 
-
 init : Model
-init =
-  0
+init = 0
 
 
 
 -- UPDATE
-
-
 type Msg
   = Increment
   | Decrement
@@ -53,8 +45,6 @@ update msg model =
 
 
 -- VIEW
-
-
 view : Model -> Html Msg
 view model =
   div []
